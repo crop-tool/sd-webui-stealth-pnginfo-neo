@@ -3,13 +3,13 @@
 This extension embeds image generation metadata into the (unused) alpha channel of a PNG generated in [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui). 
 Works in [Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic)!
 
-**Will not work for JPEG images.** Skips webp.
+**Will not work for JPEG images.** Ignores webp too.
 
-***Please note that as this data is embedded in the image pixels, it is not visible in an EXIF data viewer.***
+***Please note that as the "stealth" copy of the data is embedded in the image pixels, it is not visible in an EXIF data viewer.***
 
 It will show up in the PNG info tab in the webui and via bots like [Prompt Inspector](https://github.com/sALTaccount/PromptInspectorBot), but not via EXIF tools.
 
-Extension auto-activates and runs alongside standard webui PNG info functions, embedded and capable of reading both the typical EXIF info and the resilient signature no extra settings are required. It can optionally be disabled in settings if desired.
+Extension auto-activates and runs alongside standard webui PNG info functions, embedding and reading both the typical EXIF info and the resilient signature, no extra settings are required. It can optionally be disabled in settings if desired.
 
 ### Acknowledgements
 
